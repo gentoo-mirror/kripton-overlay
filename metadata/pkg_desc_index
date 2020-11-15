@@ -1,0 +1,4 @@
+media-sound/murmur 9999: Mumble is an open source, low-latency, high quality voice chat software
+media-sound/welle-io 1.0 2.2: A DAB/DAB+ Software Radio
+media-video/ndi-sdk-bin 4.5.1: NewTek NDI SDK
+media-video/obs-ndi 4.9.1: OBS plugin to integrate with the NDI SDK
