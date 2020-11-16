@@ -1,9 +1,9 @@
-# Copyright 2017 Christian Affolter &ltc.affolter@purplehaze.ch>
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
-inherit eutils qmake-utils versionator
+inherit desktop qmake-utils
 
 MY_PN="welle.io"
 MY_PV="${PV/_/-}"
@@ -17,6 +17,10 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
+
+# The test samples are not part of the source distribution
+# Tests will hang if those files are missing
+RESTRICT="test"
 
 DEPEND="dev-qt/qtcharts:5[qml]
 		dev-qt/qtdeclarative:5
@@ -41,7 +45,6 @@ src_prepare() {
 	sed -i \
 		-e 's|^\([[:space:]]*CONFIG[[:space:]]\++=[[:space:]]\+soapysdr\)|#\1|' \
 		src/backend.pri || die "Couldn't disable soapysdr support"
-
 
 	eapply_user
 }

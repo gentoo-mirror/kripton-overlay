@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>kripton@kripserver.net</email>
+		<name>Jannis Achstetter</name>
+	</maintainer>
+
+	<longdescription>A DAB/DAB+ Software Radio</longdescription>
+
+	<upstream>
+		<remote-id type="github">AlbrechtL/welle.io</remote-id>
+	</upstream>
+</pkgmetadata>

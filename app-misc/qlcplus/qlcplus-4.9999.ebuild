@@ -6,18 +6,18 @@ EAPI=7
 inherit qmake-utils udev virtualx xdg
 
 if [[ "${PV}" == "4.9999" ]]; then
-        inherit git-r3
+	inherit git-r3
 
-        EGIT_REPO_URI="https://github.com/mcallegari/${PN}"
+	EGIT_REPO_URI="https://github.com/mcallegari/${PN}"
 fi
 
 DESCRIPTION="A software to control DMX or analog lighting systems"
 HOMEPAGE="https://www.qlcplus.org/"
 
 if [[ "${PV}" != "4.9999" ]]; then
-        SRC_URI="https://github.com/mcallegari/${PN}/archive/QLC+_${PV}.tar.gz"
+	SRC_URI="https://github.com/mcallegari/${PN}/archive/QLC+_${PV}.tar.gz"
 else
-        SRC_URI=""
+	SRC_URI=""
 fi
 
 S="${WORKDIR}/qlcplus-${PV}"
