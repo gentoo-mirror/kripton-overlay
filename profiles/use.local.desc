@@ -2,4 +2,9 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+app-misc/ola:examples - Build and install some cli binaries and example scripts.
+app-misc/ola:ftdi - Build the ftdidmx plugin for devices using only that chip.
+app-misc/ola:httpd - Enable the integrated web UI.
+app-misc/ola:usb - Build the device plugins for USB-devices not using an FTDI chip.
+media-sound/murmur:grpc - Use net-libs/grpc to enable remote control capabilities.
 media-sound/murmur:ice - Use dev-libs/Ice to enable remote control capabilities.
