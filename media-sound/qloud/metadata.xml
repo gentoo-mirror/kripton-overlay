@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>kripton@kripserver.net</email>
+		<name>Jannis Achstetter</name>
+	</maintainer>
+
+	<longdescription>Tool to measure loudspeaker frequency and step responses and distortions</longdescription>
+
+	<upstream>
+		<remote-id type="github">molke-productions/qloud</remote-id>
+	</upstream>
+</pkgmetadata>

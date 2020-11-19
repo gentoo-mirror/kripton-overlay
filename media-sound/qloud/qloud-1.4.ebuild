@@ -1,0 +1,60 @@
+# Copyright 1999-2020 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=7
+
+inherit qmake-utils
+
+if [[ "${PV}" == "9999" ]]; then
+	inherit git-r3
+
+	EGIT_REPO_URI="https://github.com/molke-productions/${PN}"
+fi
+
+DESCRIPTION="Tool to measure loudspeaker frequency and step responses and distortions"
+HOMEPAGE="https://github.com/molke-productions/qloud"
+
+if [[ "${PV}" != "9999" ]]; then
+	SRC_URI="https://github.com/molke-productions/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+else
+	SRC_URI=""
+fi
+
+LICENSE="GPL-2"
+SLOT="0"
+KEYWORDS="~amd64"
+IUSE=""
+
+RESTRICT="test"
+
+BDEPEND="
+	dev-qt/linguist-tools:5
+"
+RDEPEND="
+	dev-qt/qtcharts:5
+	dev-qt/qtcore:5
+	dev-qt/qtgui:5
+	dev-qt/qtprintsupport:5
+	dev-qt/qtwidgets:5
+	dev-qt/qtxml:5
+	media-libs/libsndfile
+	sci-libs/fftw:3.0
+	virtual/jack
+"
+DEPEND="${RDEPEND}
+"
+
+src_prepare() {
+	default
+
+	sed -e "s!/usr/local!/usr!" \
+		-i config.pri || die
+}
+
+src_configure() {
+	eqmake5
+}
+
+src_install() {
+	emake INSTALL_ROOT="${D}" install
+}
