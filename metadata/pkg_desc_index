@@ -1,6 +1,7 @@
 app-misc/ola 0.10.7 9999: Open Lighting Architecture
 app-misc/qlcplus 4.9999: A software to control DMX or analog lighting systems
 app-mobilephone/scrcpy 1.16: Display and control your Android device
+media-sound/qloud 1.4: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/welle-io 1.0 2.2: A DAB/DAB+ Software Radio
 media-video/ndi-sdk-bin 4.5.1: NewTek NDI SDK
 media-video/obs-ndi 4.9.1: OBS plugin to integrate with the NDI SDK
