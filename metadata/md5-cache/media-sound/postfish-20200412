@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=sci-libs/fftw:3.0 x11-libs/gtk+:2 media-libs/libao virtual/pkgconfig
+DESCRIPTION=A digital audio post-processing, restoration, filtering and mixdown tool
+EAPI=7
+HOMEPAGE=https://gitlab.xiph.org/xiph/postfish
+KEYWORDS=~amd64
+LICENSE=GPL-2
+RDEPEND=sci-libs/fftw:3.0 x11-libs/gtk+:2 media-libs/libao
+SLOT=0
+SRC_URI=https://github.com/ePirat/Postfish/archive/215daa291d1e9f1ead93563abae9ebda2a61a0e7.tar.gz -> postfish-20200412.tar.gz
+_eclasses_=multilib	98584e405e2b0264d37e8f728327fed1	toolchain-funcs	605c126bed8d87e4378d5ff1645330cb
+_md5_=7b5ba5db24da28720e08d65df8a038f4
