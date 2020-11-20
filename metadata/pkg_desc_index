@@ -5,3 +5,4 @@ media-sound/qloud 1.4 9999: Tool to measure loudspeaker frequency and step respo
 media-sound/welle-io 1.0 2.2: A DAB/DAB+ Software Radio
 media-video/ndi-sdk-bin 4.5.1: NewTek NDI SDK
 media-video/obs-ndi 4.9.1: OBS plugin to integrate with the NDI SDK
+sys-fs/ddumbfs 1.1: A fast, inline deduplication filesystem
