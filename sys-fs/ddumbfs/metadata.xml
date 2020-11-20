@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>kripton@kripserver.net</email>
+		<name>Jannis Achstetter</name>
+	</maintainer>
+	<upstream>
+		<maintainer status="unknown">
+			<email>alain.spineux@gmail.com</email>
+			<name>Alain Spineux</name>
+		</maintainer>
+	</upstream>
+</pkgmetadata>
