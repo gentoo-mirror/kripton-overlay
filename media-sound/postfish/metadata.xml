@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>kripton@kripserver.net</email>
+		<name>Jannis Achstetter</name>
+	</maintainer>
+
+	<longdescription>A digital audio post-processing, restoration, filtering and mixdown tool</longdescription>
+
+	<upstream>
+		<remote-id type="gitlab">https://gitlab.xiph.org/xiph/postfish</remote-id>
+	</upstream>
+</pkgmetadata>

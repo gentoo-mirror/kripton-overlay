@@ -1,0 +1,32 @@
+--- a/Makefile	2020-11-21 00:07:26.952850744 +0100
++++ b/Makefile	2020-11-21 00:09:47.389103631 +0100
+@@ -22,10 +22,9 @@
+ ADD_DEF += -DGSEAL_ENABLE # Seal struct members to prevent direct access where not allowed
+ # TODO: Enable -DGDK_DISABLE_DEPRECATED once no more deprecated GDK APIs are used
+ 
+-CC=gcc 
+ LD=gcc
+ INSTALL=install
+-PREFIX=/usr/local
++PREFIX=/usr
+ BINDIR=$(PREFIX)/bin
+ ETCDIR=/etc/postfish
+ MANDIR=$(PREFIX)/man
+@@ -46,7 +45,7 @@
+ GCF = -DETCDIR=\\\"$(ETCDIR)\\\" `pkg-config --cflags gtk+-2.0 ao \> 1.2`
+ 
+ all:	
+-	$(MAKE) target CFLAGS="-O2 -ffast-math -fomit-frame-pointer $(GCF) $(ADD_DEF)"
++	$(MAKE) target CFLAGS="$(CFLAGS) -ffast-math $(GCF) $(ADD_DEF)"
+ 
+ debug:
+ 	$(MAKE) target CFLAGS="-g -Wall -W -Wno-unused-parameter -D__NO_MATH_INLINES $(GCF) $(ADD_DEF)"
+@@ -82,7 +81,7 @@
+ 
+ target:  $(OBJ) postfish-wisdomrc
+ 	./touch-version
+-	$(LD) $(OBJ) $(CFLAGS) -o postfish $(LIBS) `pkg-config --libs gtk+-2.0 \>= 2.24 ao \> 1.2` -lpthread -lfftw3f -lm
++	$(CC) $(LDFLAGS) $(OBJ) $(CFLAGS) -o postfish $(LIBS) `pkg-config --libs gtk+-2.0 \>= 2.24 ao \> 1.2` -lpthread -lfftw3f -lm
+ 
+ install: target
+ 	$(INSTALL) -d -m 0755 $(BINDIR)
