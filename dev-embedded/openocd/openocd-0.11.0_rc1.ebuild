@@ -34,7 +34,7 @@ RDEPEND="
 		virtual/libusb:0
 		virtual/libusb:1
 	)
-	ftdi? ( <dev-embedded/libftdi-1.5:= )"
+	ftdi? ( dev-embedded/libftdi:= )"
 
 DEPEND="${RDEPEND}"
 BDEPEND="virtual/pkgconfig"
