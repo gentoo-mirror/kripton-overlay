@@ -19,6 +19,6 @@
 		</flag>
 	</use>
 	<upstream>
-		<remote-id type="github">dvdisaster</remote-id>
+		<remote-id type="github">speed47/dvdisaster</remote-id>
 	</upstream>
 </pkgmetadata>
