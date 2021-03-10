@@ -7,10 +7,8 @@ app-misc/ola:examples - Build and install some cli binaries and example scripts.
 app-misc/ola:ftdi - Build the ftdidmx plugin for devices using only that chip.
 app-misc/ola:httpd - Enable the integrated web UI.
 app-misc/ola:usb - Build the device plugins for USB-devices not using an FTDI chip.
-dev-embedded/openocd:capstone - Use dev-libs/capstone for disassembly support
-dev-embedded/openocd:cmsis-dap - Support for CMSIS-DAP compliant adapters
-dev-embedded/openocd:dummy - Build the dummy port driver
-dev-embedded/openocd:ftdi - Enable support for USB FTDI chips via dev-embedded/libftdi
-dev-embedded/openocd:jlink - Build the SEGGER J-Link driver
-dev-embedded/openocd:parport - Enable support for parport JTAG devices
-dev-embedded/openocd:verbose-io - Verbose IO and comm JTAG and USB messages
+sci-geosciences/viking:geoclue - Use app-misc/geoclue to determine current location
+sci-geosciences/viking:libexif - Use media-libs/libexif for EXIF support
+sci-geosciences/viking:mapnik - Enable a layer based on mapnik
+sci-geosciences/viking:oauth - Enable OAuth authentication for OSM
+sci-geosciences/viking:sqlite - Enable MBTiles support based on dev-db/sqlite
