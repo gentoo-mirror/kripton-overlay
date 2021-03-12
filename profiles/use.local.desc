@@ -7,8 +7,3 @@ app-misc/ola:examples - Build and install some cli binaries and example scripts.
 app-misc/ola:ftdi - Build the ftdidmx plugin for devices using only that chip.
 app-misc/ola:httpd - Enable the integrated web UI.
 app-misc/ola:usb - Build the device plugins for USB-devices not using an FTDI chip.
-sci-geosciences/viking:geoclue - Use app-misc/geoclue to determine current location
-sci-geosciences/viking:libexif - Use media-libs/libexif for EXIF support
-sci-geosciences/viking:mapnik - Enable a layer based on mapnik
-sci-geosciences/viking:oauth - Enable OAuth authentication for OSM
-sci-geosciences/viking:sqlite - Enable MBTiles support based on dev-db/sqlite
