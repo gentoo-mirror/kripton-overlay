@@ -32,3 +32,10 @@ src_install() {
 	# Copy over everything not yet deleted
 	cp -R "${S}/" "${D}/opt/raspberrypi/" || die "Install failed!"
 }
+
+pkg_postinst() {
+	elog "This ebuild only contains the files from the pico-sdk as they are found on github."
+	elog "It does not contain the toolchain (compiler for the ARM Cortex-M0 core of the rp2040)."
+	elog "You can either install the compiler using some binary download from ARM OR"
+	elog "use Gentoo's great sys-devel/crossdev tool to compile the cross-compiler yourself."
+}
