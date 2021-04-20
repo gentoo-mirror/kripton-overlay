@@ -25,12 +25,13 @@ RDEPEND="${DEPEND}"
 src_install() {
 	# Not sure if /opt is the best place but it's mainly
 	# "source code" for an embedded system, not for the host
-	dodir /opt/raspberrypi/${PN}
+	dodir /opt/raspberrypi/${P}
 	# Remove all .git folders (including in submodules)
 	# Drop output since there are some "folder not found" errors I don't understand
 	find "${S}" -type d -name ".git" -exec rm -rf '{}' \; > /dev/null 2> /dev/null
 	# Copy over everything not yet deleted
-	cp -R "${S}/" "${D}/opt/raspberrypi/" || die "Install failed!"
+	cp -R "${S}" "${D}/opt/raspberrypi/" || die "Install failed!"
+	mv "${D}/opt/raspberrypi/${P}" "${D}/opt/raspberrypi/${PN}" || die "Install failed!"
 }
 
 pkg_postinst() {
@@ -38,4 +39,8 @@ pkg_postinst() {
 	elog "It does not contain the toolchain (compiler for the ARM Cortex-M0 core of the rp2040)."
 	elog "You can either install the compiler using some binary download from ARM OR"
 	elog "use Gentoo's great sys-devel/crossdev tool to compile the cross-compiler yourself."
+	elog "If doing so, use \"arm-none-eabi\" as target."
+	elog ""
+	elog "You should also set the environment variable PICO_SDK_PATH to /opt/raspberrypi/${PN}"
+	elog "so that pico-sdk based projects know where to find the pico-sdk"
 }
