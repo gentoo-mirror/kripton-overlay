@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>kripton@kripserver.net</email>
+		<name>Jannis Achstetter</name>
+	</maintainer>
+
+	<longdescription>The Raspberry Pi Pico SDK (henceforth the SDK) provides the headers, libraries and build system necessary to write programs for the RP2040-based devices such as the Raspberry Pi Pico in C, C++ or assembly language.</longdescription>
+
+	<upstream>
+		<remote-id type="github">raspberrypi/pico-sdk</remote-id>
+	</upstream>
+</pkgmetadata>
