@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install postinst unpack
+DESCRIPTION=Pico SDK (C/C++) for RP2040-based devices such as the RaspberryPi Pico
+EAPI=7
+HOMEPAGE=https://github.com/raspberrypi/pico-sdk
+INHERIT=git-r3
+KEYWORDS=~amd64
+LICENSE=BSD
+PROPERTIES=live
+RESTRICT=test
+SLOT=0
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
+_md5_=1e1408aaa6554d2cd70a3e90c8e4261e
