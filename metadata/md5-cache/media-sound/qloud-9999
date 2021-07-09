@@ -11,5 +11,5 @@ PROPERTIES=live
 RDEPEND=dev-qt/qtcharts:5 dev-qt/qtcore:5 dev-qt/qtgui:5 dev-qt/qtprintsupport:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 media-libs/libsndfile sci-libs/fftw:3.0 virtual/jack x11-libs/qwt:6
 RESTRICT=test
 SLOT=0
-_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	qmake-utils	dc74fe3891abc25e80dad5cd3d7c6e47	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	qmake-utils	8d97008fa49744cf997d627ec6f9cd30	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
 _md5_=c42d4b773ee926f5c960f91999d86436
