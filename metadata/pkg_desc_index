@@ -1,7 +1,6 @@
 app-cdr/dvdisaster 0.79.6.6: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
 app-misc/ola 0.10.7 0.10.8 9999: Open Lighting Architecture
 app-misc/qlcplus 4.9999: A software to control DMX or analog lighting systems
-app-mobilephone/scrcpy 1.16 1.17: Display and control your Android device
 dev-embedded/pico-sdk 1.1.2 1.2.0: Pico SDK (C/C++) for RP2040-based devices such as the RaspberryPi Pico
 dev-embedded/picotool 1.0.1: A tool for inspecting RP2040 binaries and interacting with RP2040 devices.
 media-fonts/exljbris-free 20210312: Beautiful free fonts from exljbris Font Foundry
