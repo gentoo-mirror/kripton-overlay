@@ -1,0 +1,15 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install postinst prerm setup unpack
+DEPEND=app-arch/unzip app-admin/webapp-config >=app-admin/webapp-config-1.50.15
+DESCRIPTION=Web-based administration for VirtualBox in PHP
+EAPI=7
+HOMEPAGE=https://github.com/phpvirtualbox/phpvirtualbox/
+INHERIT=git-r3 readme.gentoo-r1 webapp
+IUSE=vhosts
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=dev-lang/php[session,unicode,soap,gd] virtual/httpd-php:* >=app-admin/webapp-config-1.50.15
+SLOT=6.1.0.9999
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	readme.gentoo-r1	c9646d622541c023f5159b86a14e930c	webapp	cd327e73cdb307ceb80dcca6b8ad8b52
+_md5_=c24232e03ca8565d172a44306292487d
