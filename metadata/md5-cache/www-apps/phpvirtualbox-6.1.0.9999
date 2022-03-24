@@ -11,5 +11,5 @@ LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=dev-lang/php[session,unicode,soap,gd] virtual/httpd-php:* app-admin/webapp-config
 SLOT=6.1.0.9999
-_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	readme.gentoo-r1	eebd0164fe61f4f7b64a683e83fdceb1	webapp	60f2eb31dec733d05e8114cc078ebc33
+_eclasses_=git-r3	b9ac6f96d2a88edb5b351df634dc5e53	readme.gentoo-r1	b776ad4b42f564c406a95c41ccb42c55	webapp	cbf94d7383f416c5ead4634aa89916a9
 _md5_=c24232e03ca8565d172a44306292487d
