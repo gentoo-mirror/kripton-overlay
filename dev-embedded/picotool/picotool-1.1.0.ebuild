@@ -1,7 +1,7 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit cmake
 
@@ -21,8 +21,6 @@ BDEPEND="${DEPEND}
 	dev-embedded/pico-sdk
 	virtual/pkgconfig"
 RDEPEND="${DEPEND}"
-
-PATCHES="${FILESDIR}/0001-Add-missing-include-limits-to-cli.h.patch"
 
 src_prepare() {
 	export PICO_SDK_PATH=/opt/raspberrypi/pico-sdk/
