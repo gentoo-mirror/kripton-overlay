@@ -10,5 +10,5 @@ LICENSE=exljbris-free
 RESTRICT=mirror
 SLOT=0
 SRC_URI=https://www.exljbris.com/dl/DELICIOUS_21_OTF.zip https://www.exljbris.com/dl/Diavlo_II_37b2.zip https://www.exljbris.com/dl/fontin2_pc.zip https://www.exljbris.com/dl/FontinSans_49.zip https://www.exljbris.com/dl/tallys_15b2.zip
-_eclasses_=font	9cdfddf092c05c7c4efd70cc30dea046
+_eclasses_=font	5e03cb70902daa9ff8967c61130f0f60
 _md5_=e12936eac96bcda7d2f1163a4abc413f
