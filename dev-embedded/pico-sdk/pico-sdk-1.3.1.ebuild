@@ -6,7 +6,7 @@ EAPI=7
 inherit git-r3
 
 DESCRIPTION="Pico SDK (C/C++) for RP2040-based devices such as the RaspberryPi Pico"
-HOMEPAGE="https://github.com/raspberrypi/${PN}"
+HOMEPAGE="https://github.com/raspberrypi/pico-sdk"
 
 # We clone via git since we need to fetch the submodules
 EGIT_REPO_URI="${HOMEPAGE}"

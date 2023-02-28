@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -11,7 +11,19 @@ HOMEPAGE="https://github.com/raspberrypi/pico-sdk"
 # We clone via git since we need to fetch the submodules
 EGIT_REPO_URI="${HOMEPAGE}"
 EGIT_COMMIT="${PV}"
-EGIT_SUBMODULES=( tinyusb lib/tinyusb/tools/uf2 lib/tinyusb/lib/lwip )
+EGIT_SUBMODULES=(
+	tinyusb
+	lib/tinyusb/tools/uf2
+	lib/tinyusb/lib/lwip
+	lib/lwip
+	lib/cyw43-driver
+	lib/mbedtls
+	lib/btstack
+	lib/tinyusb/lib/FreeRTOS-Kernel
+	lib/tinyusb/lib/CMSIS_5
+	lib/tinyusb/hw/mcu/raspberry_pi/Pico-PIO-USB
+	lib/tinyusb/tools/uf2/hidapi
+)
 
 LICENSE="BSD"
 SLOT="0"
