@@ -7,7 +7,7 @@ media-fonts/exljbris-free 20210312: Beautiful free fonts from exljbris Font Foun
 media-sound/postfish 20190208 20200412: A digital audio post-processing, restoration, filtering and mixdown tool
 media-sound/qloud 1.4 9999: Tool to measure loudspeaker frequency and step responses and distortions
 media-sound/welle-io 1.0 2.2: A DAB/DAB+ Software Radio
-media-video/ndi-sdk-bin 4.5.1: NewTek NDI SDK
-media-video/obs-ndi 4.9.1: OBS plugin to integrate with the NDI SDK
+media-video/ndi-sdk-bin 4.5.1 5.5.3: NewTek NDI SDK
+media-video/obs-ndi 4.9.1 4.11.0_rc: OBS plugin to integrate with the NDI SDK
 sys-fs/ddumbfs 1.1: A fast, inline deduplication filesystem
 www-apps/phpvirtualbox 6.1.0.9999: Web-based administration for VirtualBox in PHP
