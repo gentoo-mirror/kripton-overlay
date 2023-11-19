@@ -11,7 +11,7 @@ SRC_URI="https://github.com/epsilonrt/mbpoll/archive/refs/tags/v${PV}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~arm64"
 IUSE=""
 
 DEPEND=">=dev-libs/libmodbus-3.1.4"
