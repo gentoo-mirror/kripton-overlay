@@ -3,7 +3,6 @@
 # * generated automatically using pmaint *
 
 app-cdr/dvdisaster:debug - Enable memory debugging.
-app-misc/ola:examples - Build and install some cli binaries and example scripts.
-app-misc/ola:ftdi - Build the ftdidmx plugin for devices using only that chip.
-app-misc/ola:httpd - Enable the integrated web UI.
-app-misc/ola:usb - Build the device plugins for USB-devices not using an FTDI chip.
+app-misc/ola:ftdi - Support FTDI devices
+app-misc/ola:http - Enable built-in Web UI
+app-misc/ola:rdm-tests - Install RDM responder tests
