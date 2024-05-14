@@ -1,38 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>kripton@kripserver.net</email>
-		<name>Jannis Achstetter</name>
+		<email>marecki@gentoo.org</email>
+		<name>Marek Szuba</name>
 	</maintainer>
-	<maintainer type="project">
-		<email>proxy-maint@gentoo.org</email>
-		<name>Proxy Maintainers</name>
-	</maintainer>
-
 	<longdescription>
-		The Open Lighting Architecture (OLA) is a framework for controlling entertainment 
-		lighting equipment. Within the entertainment lighting industry, the Digital 
-		Multiplex protocol (DMX-512) and IP variants such as Streaming ACN (sACN) are 
-		used to control lighting fixtures.
+		The Open Lighting Architecture is a framework for lighting control information.
+		It supports a range of protocols and over a dozen USB devices. It can run as a
+		standalone service, which is useful for converting signals between protocols,
+		or alternatively using the OLA API, it can be used as the backend for lighting
+		control software. OLA runs on many different platforms including ARM, which
+		makes it a perfect fit for low cost Ethernet to DMX gateways.
 	</longdescription>
-
 	<upstream>
 		<remote-id type="github">OpenLightingProject/ola</remote-id>
 	</upstream>
-
 	<use>
-		<flag name="examples">
-			Build and install some cli binaries and example scripts.
-		</flag>
-		<flag name="ftdi">
-			Build the ftdidmx plugin for devices using only that chip.
-		</flag>
-		<flag name="httpd">
-			Enable the integrated web UI.
-		</flag>
-		<flag name="usb">
-			Build the device plugins for USB-devices not using an FTDI chip.
-		</flag>
+		<flag name="ftdi">Support FTDI devices</flag>
+		<flag name="http">Enable built-in Web UI</flag>
+		<flag name="rdm-tests">Install RDM responder tests</flag>
 	</use>
 </pkgmetadata>
