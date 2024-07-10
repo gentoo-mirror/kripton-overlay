@@ -8,9 +8,9 @@ inherit cmake
 MY_PV="${PV/_rc/-RC}"
 MY_P="${PN}-${MY_PV}"
 
-DESCRIPTION="OBS plugin to integrate with the NDI SDK"
-HOMEPAGE="https://github.com/Palakis/obs-ndi"
-SRC_URI="https://github.com/Palakis/obs-ndi/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="OBS plugin to integrate with the NDI SDK (formerly named obs-ndi)"
+HOMEPAGE="https://github.com/DistroAV/DistroAV"
+SRC_URI="https://github.com/${PN}/${PN}/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -35,7 +35,7 @@ src_prepare() {
 
 	# Patch the correct path to the NDI library into the source
 	sed -e "s:/usr/lib:/usr/lib64:g" \
-		-i "src/${PN}.cpp" || die
+		-i "src/plugin-main.cpp" || die
 
 	cmake_src_prepare
 }
@@ -46,10 +46,10 @@ src_configure() {
 
 src_install() {
 	insinto /usr/lib64/obs-plugins
-	doins "../${MY_P}_build/rundir/RelWithDebInfo/obs-plugins/64bit/${PN}.so"
+	doins "../${MY_P}_build/obs-ndi.so"
 
-	insinto "/usr/share/obs/obs-plugins/${PN}"
-	doins -r "../${MY_P}_build/rundir/RelWithDebInfo/data/obs-plugins/${PN}/data/locale"
+	insinto "/usr/share/obs/obs-plugins/obs-ndi"
+	doins -r "data/locale"
 
 	dodoc README.md
 }
