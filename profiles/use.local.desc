@@ -6,3 +6,14 @@ app-cdr/dvdisaster:debug - Enable memory debugging.
 app-misc/ola:ftdi - Support FTDI devices
 app-misc/ola:http - Enable built-in Web UI
 app-misc/ola:rdm-tests - Install RDM responder tests
+sys-apps/knxd:dummy - Add support for a dummy interface (for testing)
+sys-apps/knxd:eibd - Install the eib daemon
+sys-apps/knxd:eibnetip - Add support for EIBNet/IP (aka KNXNet/IP)
+sys-apps/knxd:eibnetipserver - Allow eibd to act as an EIBNet/IP server
+sys-apps/knxd:eibnetiptunnel - Add support for EIBNet/IP tunneling to eibd
+sys-apps/knxd:ft12 - Add support for FT1.2
+sys-apps/knxd:groupcache - Add support for group telegram cache
+sys-apps/knxd:ncn5120 - Add support for NCN5120
+sys-apps/knxd:pei16s - experimental PEI16 driver
+sys-apps/knxd:tpuart - Add support for TPUART (user mode)
+sys-apps/knxd:tpuarts - Add support for TPUART (user mode)
