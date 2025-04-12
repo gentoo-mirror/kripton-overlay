@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=sci-libs/fftw:3.0 x11-libs/gtk+:2 media-libs/libao
 SLOT=0
 SRC_URI=https://github.com/ePirat/Postfish/archive/ad624e7e46b043183d3ab669e6cf54cba887e1a6.tar.gz -> postfish-20190208.tar.gz
-_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169
 _md5_=d01def05645630547d40afc0010f0c9d
