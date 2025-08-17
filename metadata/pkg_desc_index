@@ -3,7 +3,7 @@ acct-user/knxd 0-r1: User for sys-apps/knxd::kripton-overlay
 app-cdr/dvdisaster 0.79.6.6: Tool for creating error correction data (ecc) for optical media (DVD, CD, BD)
 app-misc/ola 9999: Open Lighting Architecture
 app-misc/qlcplus 4.9999 5.0.0_beta1: A software to control DMX or analog lighting systems
-dev-embedded/pico-sdk 1.2.0 1.3.0 1.3.1 1.4.0 1.5.0 1.5.1 2.0.0 2.1.0 2.1.1: Pico SDK (C/C++) for RP2040-based devices such as the RaspberryPi Pico
+dev-embedded/pico-sdk 1.2.0 1.3.0 1.3.1 1.4.0 1.5.0 1.5.1 2.0.0 2.1.0 2.1.1 2.2.0: Pico SDK (C/C++) for RP2040-based devices such as the RaspberryPi Pico
 dev-embedded/picotool 2.1.1: tool for interacting with rp2040 devices and binaries
 media-sound/postfish 20190208 20200412: A digital audio post-processing, restoration, filtering and mixdown tool
 media-sound/qloud 1.4 9999: Tool to measure loudspeaker frequency and step responses and distortions
